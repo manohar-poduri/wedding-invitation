@@ -4,6 +4,13 @@ export const metadata = {
   title: "Sai Swetha & Sai Santhosh | Wedding Invitation",
   description:
     "With hearts full of joy, we invite you to celebrate the wedding of Sai Swetha & Sai Santhosh — 4th September 2026, Lee Paradise Convention, Vizianagaram.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png" },   // ← change this line
+    ],
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "Sai Swetha & Sai Santhosh",
     description:
