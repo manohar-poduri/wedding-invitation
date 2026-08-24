@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  background: var(--royal-deep);
+  color: var(--ivory);
+  padding: 100px 0 60px; 
+  overflow: hidden;
+  text-align: center;
+}
+
+.gopuram {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  width: min(620px, 110vw);
+  opacity: 0.12;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.hashtag {
+  font-family: var(--font-display), serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: var(--gold-bright);
+  margin: 14px 0 0;
+}
+
+.signOff {
+  margin-top: 22px;
+  color: rgba(251, 246, 236, 0.7);
+  line-height: 1.7;
+  font-size: 0.92rem;
+}

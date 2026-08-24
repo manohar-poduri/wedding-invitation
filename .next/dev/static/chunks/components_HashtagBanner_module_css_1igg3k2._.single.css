@@ -1,0 +1,41 @@
+/* [project]/components/HashtagBanner.module.css [app-client] (css) */
+.HashtagBanner-module__mLqGfq__footer {
+  background: var(--royal-deep);
+  color: var(--ivory);
+  text-align: center;
+  padding: 100px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.HashtagBanner-module__mLqGfq__gopuram {
+  opacity: .12;
+  width: min(620px, 110vw);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%)rotate(180deg);
+}
+
+.HashtagBanner-module__mLqGfq__content {
+  z-index: 1;
+  position: relative;
+}
+
+.HashtagBanner-module__mLqGfq__hashtag {
+  font-family: var(--font-display), serif;
+  color: var(--gold-bright);
+  margin: 14px 0 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.HashtagBanner-module__mLqGfq__signOff {
+  color: #fbf6ecb3;
+  margin-top: 22px;
+  font-size: .92rem;
+  line-height: 1.7;
+}
+
+/*# sourceMappingURL=components_HashtagBanner_module_css_1igg3k2._.single.css.map*/

@@ -1,0 +1,173 @@
+.section {
+  background: var(--ivory);
+}
+
+.title {
+  margin-bottom: 4px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px auto 56px;
+}
+
+.dividerLine {
+  width: 64px;
+  height: 1px;
+  background: var(--gold-line);
+}
+
+.dividerMark {
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 560px;
+  text-align: left;
+}
+
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 20px;
+}
+
+.markerCol {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.markerCol::before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  bottom: -28px;
+  width: 1px;
+  background: var(--gold-line);
+}
+
+.row:last-child .markerCol::before {
+  display: none;
+}
+
+.marker {
+  position: relative;
+  z-index: 1;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--royal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-bright);
+  box-shadow: 0 10px 24px rgba(22, 58, 112, 0.28);
+  flex: none;
+}
+
+.markerIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--gold-line);
+  border-radius: 14px;
+  padding: 28px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 16px 36px rgba(10, 31, 61, 0.08);
+}
+
+.eventTitle {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--royal);
+  margin: 0 0 8px;
+}
+
+.when {
+  font-family: var(--font-label), serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--royal);
+  margin: 0 0 6px;
+}
+
+.venue {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #2f6b46;
+  margin: 0 0 14px;
+}
+
+.description {
+  font-size: 0.98rem;
+  color: var(--ink);
+  line-height: 1.6;
+  margin: 0 0 22px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-label), serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--royal);
+  border: none;
+  padding: 13px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(22, 58, 112, 0.35);
+}
+
+.btnIcon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: 44px 1fr;
+    gap: 14px;
+  }
+
+  .marker {
+    width: 44px;
+    height: 44px;
+  }
+
+  .markerIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .markerCol::before {
+    top: 44px;
+  }
+
+  .card {
+    padding: 22px 20px;
+  }
+}

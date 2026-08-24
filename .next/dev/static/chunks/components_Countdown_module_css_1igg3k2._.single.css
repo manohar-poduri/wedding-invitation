@@ -1,0 +1,63 @@
+/* [project]/components/Countdown.module.css [app-client] (css) */
+.Countdown-module__pe8l5a__section {
+  background: var(--ivory);
+}
+
+.Countdown-module__pe8l5a__grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  display: flex;
+}
+
+.Countdown-module__pe8l5a__medallion {
+  background: var(--mist);
+  border: 1.5px solid var(--gold-line);
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  position: relative;
+  box-shadow: inset 0 0 0 6px #fff9;
+}
+
+.Countdown-module__pe8l5a__medallion:before {
+  content: "";
+  border: 1px solid var(--gold-line);
+  border-radius: 50%;
+  position: absolute;
+  inset: 8px;
+}
+
+.Countdown-module__pe8l5a__value {
+  font-family: var(--font-display), serif;
+  color: var(--royal);
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.Countdown-module__pe8l5a__label {
+  font-family: var(--font-label), serif;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 8px;
+  font-size: .62rem;
+}
+
+@media (max-width: 560px) {
+  .Countdown-module__pe8l5a__medallion {
+    width: 104px;
+    height: 104px;
+  }
+
+  .Countdown-module__pe8l5a__value {
+    font-size: 1.7rem;
+  }
+}
+
+/*# sourceMappingURL=components_Countdown_module_css_1igg3k2._.single.css.map*/

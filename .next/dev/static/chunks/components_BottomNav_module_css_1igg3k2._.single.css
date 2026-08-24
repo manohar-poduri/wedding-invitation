@@ -1,0 +1,80 @@
+/* [project]/components/BottomNav.module.css [app-client] (css) */
+.BottomNav-module__VCeYPq__nav {
+  z-index: 40;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  scrollbar-width: none;
+  background: #fbf6eceb;
+  border: 1px solid #c9a24b47;
+  border-radius: 999px;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  max-height: calc(100vh - 32px);
+  padding: 8px;
+  display: flex;
+  position: fixed;
+  top: 50%;
+  right: 16px;
+  overflow-y: auto;
+  transform: translateY(-50%);
+  box-shadow: 0 16px 36px #0a1f3d33;
+}
+
+.BottomNav-module__VCeYPq__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.BottomNav-module__VCeYPq__item {
+  width: 44px;
+  height: 44px;
+  color: var(--royal);
+  opacity: .5;
+  border-radius: 50%;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity .25s, background .25s, transform .25s, color .25s;
+  display: flex;
+}
+
+.BottomNav-module__VCeYPq__item:hover {
+  opacity: .85;
+}
+
+.BottomNav-module__VCeYPq__item:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.BottomNav-module__VCeYPq__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.BottomNav-module__VCeYPq__item.BottomNav-module__VCeYPq__active {
+  opacity: 1;
+  color: #fff9ec;
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  transform: translateX(-2px);
+  box-shadow: 0 6px 16px #c9a24b73;
+}
+
+@media (max-width: 640px) {
+  .BottomNav-module__VCeYPq__nav {
+    right: 10px;
+  }
+
+  .BottomNav-module__VCeYPq__item {
+    width: 38px;
+    height: 38px;
+  }
+
+  .BottomNav-module__VCeYPq__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+/*# sourceMappingURL=components_BottomNav_module_css_1igg3k2._.single.css.map*/

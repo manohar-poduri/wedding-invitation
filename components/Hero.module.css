@@ -1,0 +1,189 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ivory);
+  padding: 48px 20px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: linear-gradient(180deg, #fffdf8, #fbf6ec);
+  border: 1px solid var(--gold-line);
+  border-radius: 6px;
+  box-shadow: 0 30px 70px rgba(10, 31, 61, 0.14);
+  padding: 30px;
+  overflow: hidden;
+}
+
+.corner {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  z-index: 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.cornerTL {
+  top: 6px;
+  left: 6px;
+}
+
+.cornerTR {
+  top: 6px;
+  right: 6px;
+  transform: scaleX(-1);
+}
+
+.cornerBL {
+  bottom: 6px;
+  left: 6px;
+  transform: scaleY(-1);
+}
+
+.cornerBR {
+  bottom: 6px;
+  right: 6px;
+  transform: scale(-1, -1);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 30px 20px 34px;
+}
+
+.vine {
+  display: block;
+  width: min(420px, 100%);
+  height: 34px;
+  margin: 0 auto 26px;
+}
+
+.vineBottom {
+  margin: 26px auto 0;
+  transform: scaleY(-1);
+}
+
+.blessing {
+  font-family: var(--font-label), serif;
+  font-size: 0.76rem;
+  letter-spacing: 0.03em;
+  color: var(--gold);
+  line-height: 1.7;
+  margin: 0 0 12px;
+}
+
+.inviteLine {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  color: var(--royal);
+  margin: 0 0 22px;
+  line-height: 1.4;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 26px;
+}
+
+.scriptName {
+  font-family: var(--font-script), "Brush Script MT", cursive;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  color: var(--royal);
+  line-height: 1.2;
+}
+
+.weds {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-label), serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 4px 0;
+}
+
+.wedsLine {
+  width: 30px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.dateLine {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  color: var(--royal);
+  margin: 0 0 20px;
+}
+
+.venueName {
+  font-family: var(--font-label), serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 4px;
+}
+
+.venueAddress {
+  font-size: 0.9rem;
+  color: #5a6472;
+  margin: 0 0 26px;
+}
+
+.hashtagPill {
+  display: inline-block;
+  font-family: var(--font-label), serif;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: var(--royal-deep);
+  background: var(--mist);
+  border: 1px solid var(--gold-line);
+  padding: 9px 20px;
+  border-radius: 999px;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.hashtagPill:hover {
+  transform: translateY(-2px);
+  background: #fff;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 28px 14px;
+  }
+  .card {
+    padding: 18px;
+  }
+  .content {
+    padding: 22px 10px 26px;
+  }
+  .corner {
+    width: 62px;
+    height: 62px;
+  }
+  .weds {
+    gap: 8px;
+  }
+  .wedsLine {
+    width: 18px;
+  }
+}

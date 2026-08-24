@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/HashtagBanner.module.css"],"sourcesContent":[".footer {\n  position: relative;\n  background: var(--royal-deep);\n  color: var(--ivory);\n  padding: 100px 0 60px; \n  overflow: hidden;\n  text-align: center;\n}\n\n.gopuram {\n  position: absolute;\n  top: -40px;\n  left: 50%;\n  transform: translateX(-50%) rotate(180deg);\n  width: min(620px, 110vw);\n  opacity: 0.12;\n}\n\n.content {\n  position: relative;\n  z-index: 1;\n}\n\n.hashtag {\n  font-family: var(--font-display), serif;\n  font-style: italic;\n  font-weight: 600;\n  font-size: clamp(1.6rem, 4vw, 2.4rem);\n  color: var(--gold-bright);\n  margin: 14px 0 0;\n}\n\n.signOff {\n  margin-top: 22px;\n  color: rgba(251, 246, 236, 0.7);\n  line-height: 1.7;\n  font-size: 0.92rem;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;;;;;AASA;;;;;AAKA;;;;;;;;;AASA"}}]
+}

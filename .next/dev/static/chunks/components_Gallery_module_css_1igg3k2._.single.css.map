@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/Gallery.module.css"],"sourcesContent":[".section {\n  background: var(--mist);\n}\n\n.grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 18px;\n}\n\n.tile {\n  aspect-ratio: 3 / 4;\n  border-radius: 10px;\n  overflow: hidden;\n  border: 1px solid var(--gold-line);\n  background: var(--ivory);\n}\n\n.tile img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n.placeholder {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  background: repeating-linear-gradient(\n    135deg,\n    rgba(201, 162, 75, 0.06),\n    rgba(201, 162, 75, 0.06) 10px,\n    transparent 10px,\n    transparent 20px\n  );\n}\n\n.placeholderMark {\n  color: var(--gold);\n  font-size: 1.4rem;\n}\n\n.placeholderText {\n  font-family: var(--font-label), serif;\n  font-size: 0.66rem;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  color: var(--royal);\n  opacity: 0.6;\n}\n\n@media (max-width: 720px) {\n  .grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;AAMA;;;;;;;;AAQA;;;;;;AAMA;;;;;;;;;;;AAiBA;;;;;AAKA;;;;;;;;;AASA;EACE"}}]
+}

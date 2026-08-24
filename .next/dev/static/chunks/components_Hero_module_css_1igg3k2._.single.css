@@ -1,0 +1,197 @@
+/* [project]/components/Hero.module.css [app-client] (css) */
+.Hero-module__Z8hQ_W__hero {
+  background: var(--ivory);
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  padding: 48px 20px;
+  display: flex;
+  position: relative;
+}
+
+.Hero-module__Z8hQ_W__card {
+  border: 1px solid var(--gold-line);
+  background: linear-gradient(#fffdf8, #fbf6ec);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 640px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 70px #0a1f3d24;
+}
+
+.Hero-module__Z8hQ_W__corner {
+  z-index: 0;
+  opacity: .9;
+  pointer-events: none;
+  width: 92px;
+  height: 92px;
+  position: absolute;
+}
+
+.Hero-module__Z8hQ_W__cornerTL {
+  top: 6px;
+  left: 6px;
+}
+
+.Hero-module__Z8hQ_W__cornerTR {
+  top: 6px;
+  right: 6px;
+  transform: scaleX(-1);
+}
+
+.Hero-module__Z8hQ_W__cornerBL {
+  bottom: 6px;
+  left: 6px;
+  transform: scaleY(-1);
+}
+
+.Hero-module__Z8hQ_W__cornerBR {
+  bottom: 6px;
+  right: 6px;
+  transform: scale(-1);
+}
+
+.Hero-module__Z8hQ_W__content {
+  z-index: 1;
+  text-align: center;
+  padding: 30px 20px 34px;
+  position: relative;
+}
+
+.Hero-module__Z8hQ_W__vine {
+  width: min(420px, 100%);
+  height: 34px;
+  margin: 0 auto 26px;
+  display: block;
+}
+
+.Hero-module__Z8hQ_W__vineBottom {
+  margin: 26px auto 0;
+  transform: scaleY(-1);
+}
+
+.Hero-module__Z8hQ_W__blessing {
+  font-family: var(--font-label), serif;
+  letter-spacing: .03em;
+  color: var(--gold);
+  margin: 0 0 12px;
+  font-size: .76rem;
+  line-height: 1.7;
+}
+
+.Hero-module__Z8hQ_W__inviteLine {
+  font-family: var(--font-display), serif;
+  color: var(--royal);
+  margin: 0 0 22px;
+  font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.Hero-module__Z8hQ_W__names {
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 26px;
+  display: flex;
+}
+
+.Hero-module__Z8hQ_W__scriptName {
+  font-family: var(--font-script), "Brush Script MT", cursive;
+  color: var(--royal);
+  font-size: clamp(2.4rem, 7vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.Hero-module__Z8hQ_W__weds {
+  font-family: var(--font-label), serif;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  align-items: center;
+  gap: 12px;
+  margin: 4px 0;
+  font-size: .68rem;
+  display: flex;
+}
+
+.Hero-module__Z8hQ_W__wedsLine {
+  background: var(--gold);
+  opacity: .6;
+  width: 30px;
+  height: 1px;
+}
+
+.Hero-module__Z8hQ_W__dateLine {
+  font-family: var(--font-display), serif;
+  color: var(--royal);
+  margin: 0 0 20px;
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  font-weight: 700;
+}
+
+.Hero-module__Z8hQ_W__venueName {
+  font-family: var(--font-label), serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 4px;
+  font-size: .82rem;
+}
+
+.Hero-module__Z8hQ_W__venueAddress {
+  color: #5a6472;
+  margin: 0 0 26px;
+  font-size: .9rem;
+}
+
+.Hero-module__Z8hQ_W__hashtagPill {
+  font-family: var(--font-label), serif;
+  letter-spacing: .1em;
+  color: var(--royal-deep);
+  background: var(--mist);
+  border: 1px solid var(--gold-line);
+  border-radius: 999px;
+  padding: 9px 20px;
+  font-size: .66rem;
+  text-decoration: none;
+  transition: transform .25s, background .25s;
+  display: inline-block;
+}
+
+.Hero-module__Z8hQ_W__hashtagPill:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 560px) {
+  .Hero-module__Z8hQ_W__hero {
+    padding: 28px 14px;
+  }
+
+  .Hero-module__Z8hQ_W__card {
+    padding: 18px;
+  }
+
+  .Hero-module__Z8hQ_W__content {
+    padding: 22px 10px 26px;
+  }
+
+  .Hero-module__Z8hQ_W__corner {
+    width: 62px;
+    height: 62px;
+  }
+
+  .Hero-module__Z8hQ_W__weds {
+    gap: 8px;
+  }
+
+  .Hero-module__Z8hQ_W__wedsLine {
+    width: 18px;
+  }
+}
+
+/*# sourceMappingURL=components_Hero_module_css_1igg3k2._.single.css.map*/
