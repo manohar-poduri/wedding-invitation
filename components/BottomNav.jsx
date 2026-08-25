@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./BottomNav.module.css";
 
 const ICONS = {
@@ -14,14 +14,8 @@ const ICONS = {
   ),
   events: (
     <>
-      <rect x="4" y="5.5" width="16" height="14.5" rx="2.4" />
-      <path d="M4 10h16M8 3.5v3M16 3.5v3" />
-    </>
-  ),
-  venue: (
-    <>
-      <path d="M12 21s7-6.1 7-11.5a7 7 0 1 0-14 0C5 14.9 12 21 12 21Z" />
-      <circle cx="12" cy="9.5" r="2.4" />
+      <path d="M6 9 12 3l6 6-6 12z" />
+      <path d="M6 9h12M9.5 9 12 3l2.5 6M9 9l3 12M15 9l-3 12" />
     </>
   ),
   gallery: (
@@ -38,40 +32,92 @@ const ICONS = {
 const SECTIONS = [
   { id: "home", label: "Home" },
   { id: "couple", label: "Couple" },
-  { id: "events", label: "Events"},
-  { id: "venue", label: "Venue" },
+  { id: "events", label: "Events" },
   { id: "gallery", label: "Gallery" },
   { id: "hashtag", label: "Share" },
 ];
 
+// How far down the viewport the "trigger line" sits (as a fraction of height).
+// A section is considered active once its top has scrolled past this line.
+const TRIGGER_FRACTION = 0.35;
+
 export default function BottomNav() {
   const [active, setActive] = useState("home");
+  const clickLock = useRef(false);
+  const clickLockTimeout = useRef(null);
+  const tickingRef = useRef(false);
 
   useEffect(() => {
-    const elements = SECTIONS.map((s) => document.getElementById(s.id)).filter(
-      Boolean
-    );
+    const elements = SECTIONS.map((s) => ({
+      id: s.id,
+      el: document.getElementById(s.id),
+    })).filter((s) => s.el);
+
     if (!elements.length) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: "-45% 0px -50% 0px", threshold: 0 }
-    );
+    const computeActive = () => {
+      tickingRef.current = false;
+      if (clickLock.current) return; // don't fight a click-triggered scroll
 
-    elements.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+      const line = window.innerHeight * TRIGGER_FRACTION;
+
+      // Pick the last section whose top has crossed the trigger line.
+      // This is deterministic (no flip-flopping between simultaneously
+      // "intersecting" entries) and works for sections of any height.
+      let current = elements[0].id;
+      for (const { id, el } of elements) {
+        const top = el.getBoundingClientRect().top;
+        if (top <= line) {
+          current = id;
+        } else {
+          break;
+        }
+      }
+
+      // Special-case the very bottom of the page so the last tab (e.g.
+      // "Share") still lights up even if its section is shorter than the
+      // trigger offset.
+      const atBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2;
+      if (atBottom) {
+        current = elements[elements.length - 1].id;
+      }
+
+      setActive((prev) => (prev === current ? prev : current));
+    };
+
+    const onScroll = () => {
+      if (tickingRef.current) return;
+      tickingRef.current = true;
+      requestAnimationFrame(computeActive);
+    };
+
+    computeActive();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (clickLockTimeout.current) clearTimeout(clickLockTimeout.current);
+    };
   }, []);
 
   const handleClick = (e, id) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setActive(id);
+
+    // Suppress scroll-spy updates while the smooth scroll is in flight so
+    // sections passed over on the way don't briefly steal the highlight.
+    clickLock.current = true;
+    if (clickLockTimeout.current) clearTimeout(clickLockTimeout.current);
+
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+
+    clickLockTimeout.current = setTimeout(() => {
+      clickLock.current = false;
+    }, 800);
   };
 
   return (
@@ -79,7 +125,7 @@ export default function BottomNav() {
       {SECTIONS.map((s) => (
 
         <a key={s.id}
-          href={'#${s.id}'}
+          href={`#${s.id}`}
           onClick={(e) => handleClick(e, s.id)}
           className={`${styles.item} ${active === s.id ? styles.active : ""}`}
           aria-label={s.label}

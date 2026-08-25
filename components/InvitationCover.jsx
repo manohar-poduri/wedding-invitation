@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Gopuram from "./Gopuram";
 import styles from "./InvitationCover.module.css";
 
@@ -14,11 +15,20 @@ export default function InvitationCover({ onOpen, closing }) {
       <div className={styles.sky} />
 
       <div className={styles.content}>
+        <Image
+          src="/icon.png"
+          alt="Sai Swetha & Rama Prabha Sai Santhosh"
+          width={92}
+          height={92}
+          className={styles.logo}
+          priority
+        />
+
         <div className={styles.textBlock}>
           <p className={`eyebrow ${styles.eyebrow}`}>You are invited to the wedding of</p>
 
           <p className={styles.names}>
-            Sai Swetha <span className={styles.amp}>&amp;</span> Sai Santhosh
+            Sai Swetha <span className={styles.amp}>&amp;</span>Rama Prabha Sai Santhosh
           </p>
 
           <div className={styles.divider} />

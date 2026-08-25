@@ -11,29 +11,27 @@ const BRIDE = {
   role: "",
   parents: (
     <>
-      Beloved only daughter of Sri [Father&rsquo;s Name] &amp; Smt.
-      [Mother&rsquo;s Name].
+      Beloved elder daughter of Dr. Cherukumilli Subramanyam  &amp; Smt. Subhadra.
     </>
   ),
 };
 
 const GROOM = {
   photo: "/gallery/groom.jpg",
-  name: "Sai Santhosh",
+  name: "Rama Prabha Sai Santhosh",
   role: "",
   parents: (
     <>
-      Beloved only son of Sri [Father&rsquo;s Name] &amp; Smt.
-      [Mother&rsquo;s Name].
+      Beloved elder son of Sri Poduri Rama Murthy &amp; Smt. Vijaya Padma Sailaja.
     </>
   ),
 };
 
-function Portrait({ person, delay }) {
+function Portrait({ person, delay, side }) {
   const [missing, setMissing] = useState(false);
 
   return (
-    <Reveal delay={delay} className={styles.card}>
+    <Reveal delay={delay} className={styles.card} variant="false">
       <div className={styles.photoFrame}>
         {missing ? (
           <div className={styles.placeholder}>
@@ -76,9 +74,9 @@ export default function Couple() {
         </Reveal>
 
         <div className={styles.grid}>
-          <Portrait person={BRIDE} delay={0} />
+          <Portrait person={BRIDE} delay={0} side="left" />
           <span className={styles.amp}>&amp;</span>
-          <Portrait person={GROOM} delay={120} />
+          <Portrait person={GROOM} delay={120} side="right" />
         </div>
       </div>
     </section>

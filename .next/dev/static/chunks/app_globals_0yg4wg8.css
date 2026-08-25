@@ -133,6 +133,56 @@ img {
   transform: translateY(0);
 }
 
+.reveal-left {
+  opacity: 0;
+  transition: opacity .8s, transform .8s;
+  transform: translateX(-40px);
+}
+
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transition: opacity .8s, transform .8s;
+  transform: translateX(40px);
+}
+
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-zoom {
+  opacity: 0;
+  transition: opacity .7s, transform .7s cubic-bezier(.34, 1.56, .64, 1);
+  transform: scale(.88);
+}
+
+.reveal-zoom.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity .9s;
+}
+
+.reveal-fade.is-visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-right, .reveal-zoom, .reveal-fade {
+    opacity: 1;
+    transition: none;
+    transform: none;
+  }
+}
+
 .divider-line {
   background: linear-gradient(var(--gold), transparent);
   width: 1px;

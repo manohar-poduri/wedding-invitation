@@ -42,14 +42,14 @@ export default function Countdown() {
           </p>
           <h2 className="section-title">The Auspicious Muhurtham</h2>
           <p className="section-sub" style={{ margin: "0 auto 48px" }}>
-            Saturday, 4th September 2026 &middot; 3:50 AM &middot; Lee Paradise
+            Saturday, 4th September 2026 &middot; 3:50 AM &middot; (Early Hours of Saturday) Lee Paradise
             Convention, Vizianagaram
           </p>
         </Reveal>
 
         <div className={styles.grid}>
           {units.map((u, i) => (
-            <Reveal key={u.label} delay={i * 90}>
+            <Reveal key={u.label} delay={i * 90} variant="zoom">
               <div className={styles.medallion}>
                 <span className={styles.value}>
                   {time ? String(u.value).padStart(2, "0") : "--"}

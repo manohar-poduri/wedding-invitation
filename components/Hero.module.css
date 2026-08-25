@@ -18,6 +18,38 @@
   box-shadow: 0 30px 70px rgba(10, 31, 61, 0.14);
   padding: 30px;
   overflow: hidden;
+  opacity: 0;
+  transform: scale(0.94);
+  animation: heroCardIn 0.9s ease 0.15s forwards;
+}
+
+@keyframes heroCardIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.heroItem {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: heroItemIn 0.7s ease forwards;
+}
+
+@keyframes heroItemIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .heroItem {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .corner {

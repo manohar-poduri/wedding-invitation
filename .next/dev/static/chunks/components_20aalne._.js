@@ -1403,9 +1403,11 @@ __turbopack_context__.s([
     ()=>InvitationCover
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Gopuram$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Gopuram.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/components/InvitationCover.module.css [app-client] (css module)");
 "use client";
+;
 ;
 ;
 ;
@@ -1424,12 +1426,24 @@ function InvitationCover({ onOpen, closing }) {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].sky
             }, void 0, false, {
                 fileName: "[project]/components/InvitationCover.jsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].content,
                 children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: "/icon.png",
+                        alt: "Sai Swetha & Sai Santhosh",
+                        width: 92,
+                        height: 92,
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].logo,
+                        priority: true
+                    }, void 0, false, {
+                        fileName: "[project]/components/InvitationCover.jsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].textBlock,
                         children: [
@@ -1438,7 +1452,7 @@ function InvitationCover({ onOpen, closing }) {
                                 children: "You are invited to the wedding of"
                             }, void 0, false, {
                                 fileName: "[project]/components/InvitationCover.jsx",
-                                lineNumber: 18,
+                                lineNumber: 28,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1450,21 +1464,21 @@ function InvitationCover({ onOpen, closing }) {
                                         children: "&"
                                     }, void 0, false, {
                                         fileName: "[project]/components/InvitationCover.jsx",
-                                        lineNumber: 21,
+                                        lineNumber: 31,
                                         columnNumber: 24
                                     }, this),
                                     " Sai Santhosh"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InvitationCover.jsx",
-                                lineNumber: 20,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].divider
                             }, void 0, false, {
                                 fileName: "[project]/components/InvitationCover.jsx",
-                                lineNumber: 24,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1472,13 +1486,13 @@ function InvitationCover({ onOpen, closing }) {
                                 children: "4th September 2026"
                             }, void 0, false, {
                                 fileName: "[project]/components/InvitationCover.jsx",
-                                lineNumber: 26,
+                                lineNumber: 36,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/InvitationCover.jsx",
-                        lineNumber: 17,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1495,12 +1509,12 @@ function InvitationCover({ onOpen, closing }) {
                                         children: "✦"
                                     }, void 0, false, {
                                         fileName: "[project]/components/InvitationCover.jsx",
-                                        lineNumber: 32,
+                                        lineNumber: 42,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/InvitationCover.jsx",
-                                    lineNumber: 31,
+                                    lineNumber: 41,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1508,37 +1522,37 @@ function InvitationCover({ onOpen, closing }) {
                                     children: "Open Invitation"
                                 }, void 0, false, {
                                     fileName: "[project]/components/InvitationCover.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/InvitationCover.jsx",
-                            lineNumber: 30,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/InvitationCover.jsx",
-                        lineNumber: 29,
+                        lineNumber: 39,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/InvitationCover.jsx",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Gopuram$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].gopuram
             }, void 0, false, {
                 fileName: "[project]/components/InvitationCover.jsx",
-                lineNumber: 39,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/InvitationCover.jsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 5
     }, this);
 }
@@ -1562,6 +1576,7 @@ __turbopack_context__.v({
   "divider": "InvitationCover-module__91TFZq__divider",
   "eyebrow": "InvitationCover-module__91TFZq__eyebrow",
   "gopuram": "InvitationCover-module__91TFZq__gopuram",
+  "logo": "InvitationCover-module__91TFZq__logo",
   "names": "InvitationCover-module__91TFZq__names",
   "pulse": "InvitationCover-module__91TFZq__pulse",
   "seal": "InvitationCover-module__91TFZq__seal",

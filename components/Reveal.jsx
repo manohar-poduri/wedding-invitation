@@ -2,7 +2,21 @@
 
 import { useEffect, useRef, useState } from "react";
 
-export default function Reveal({ children, delay = 0, as: Tag = "div", className = "" }) {
+const VARIANT_CLASS = {
+  up: "reveal",
+  left: "reveal-left",
+  right: "reveal-right",
+  zoom: "reveal-zoom",
+  fade: "reveal-fade",
+};
+
+export default function Reveal({
+  children,
+  delay = 0,
+  as: Tag = "div",
+  className = "",
+  variant = "up",
+}) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -24,10 +38,12 @@ export default function Reveal({ children, delay = 0, as: Tag = "div", className
     return () => observer.disconnect();
   }, []);
 
+  const base = VARIANT_CLASS[variant] || VARIANT_CLASS.up;
+
   return (
     <Tag
       ref={ref}
-      className={`reveal ${visible ? "is-visible" : ""} ${className}`}
+      className={`${base} ${visible ? "is-visible" : ""} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}

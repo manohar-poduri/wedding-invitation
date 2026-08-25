@@ -9,7 +9,7 @@ const EVENTS = [
   {
     icon: "dinner",
     title: "Dinner",
-    when: "3rd September 2026 · 7:00 PM",
+    when: "4rd September 2026 · 7:00 PM",
     venue: "Lee Paradise Convention, Vizianagaram",
     description:
       "An evening of dinner and celebration with family and friends ahead of the wedding muhurtham.",
@@ -17,10 +17,10 @@ const EVENTS = [
   {
     icon: "muhurtham",
     title: "Wedding Muhurtham",
-    when: "4th September 2026 · 3:50 AM",
+    when: "4th September 2026 · 3:50 AM (early hours of Saturday)",
     venue: "Lee Paradise Convention, Vizianagaram",
     description:
-      "Under the mangala vaidyalu and vedic mantras, Sai Swetha and Sai Santhosh take their sacred seven steps together.",
+      "Under the mangala vaidyalu and vedic mantras, Sai Swetha and Rama Prabha Sai Santhosh take their sacred seven steps together.",
   },
 ];
 
@@ -39,7 +39,7 @@ const ICONS = {
   ),
 };
 
-function EventCard({ event, delay }) {
+function EventCard({ event, delay, variant }) {
   const query = encodeURIComponent(`${event.venue}`);
 
   return (
@@ -60,7 +60,7 @@ function EventCard({ event, delay }) {
         </span>
       </div>
 
-      <Reveal delay={delay} className={styles.card}>
+      <Reveal delay={delay} className={styles.card} variant={variant}>
         <h3 className={styles.eventTitle}>{event.title}</h3>
         <p className={styles.when}>{event.when}</p>
         <p className={styles.venue}>{event.venue}</p>
@@ -110,7 +110,7 @@ export default function Events() {
 
         <ol className={styles.timeline}>
           {EVENTS.map((event, i) => (
-            <EventCard event={event} delay={i * 100} key={event.title} />
+            <EventCard event={event} delay={i * 100} variant={i % 2 === 0 ? "left" : "right"} key={event.title} />
           ))}
         </ol>
       </div>

@@ -1,7 +1,8 @@
-export default function VineBorder({ className = "" }) {
+export default function VineBorder({ className = "", style }) {
   return (
     <svg
       className={className}
+      style={style}
       viewBox="0 0 1000 70"
       preserveAspectRatio="none"
       xmlns="http://www.w3.org/2000/svg"

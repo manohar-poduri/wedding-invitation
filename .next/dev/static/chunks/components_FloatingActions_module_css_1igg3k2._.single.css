@@ -1,0 +1,113 @@
+/* [project]/components/FloatingActions.module.css [app-client] (css) */
+.FloatingActions-module__0pg1ia__wrap {
+  z-index: 40;
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  left: 16px;
+}
+
+.FloatingActions-module__0pg1ia__fab {
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  transition: transform .25s, box-shadow .25s;
+  display: flex;
+  position: relative;
+  box-shadow: 0 12px 26px #0a1f3d47;
+}
+
+.FloatingActions-module__0pg1ia__fab:hover {
+  transform: translateY(-2px)scale(1.04);
+}
+
+.FloatingActions-module__0pg1ia__fab:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 3px;
+}
+
+.FloatingActions-module__0pg1ia__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.FloatingActions-module__0pg1ia__music {
+  background: linear-gradient(155deg, var(--gold-bright), var(--gold) 60%, #a9822f);
+  color: #163a70;
+}
+
+.FloatingActions-module__0pg1ia__music .FloatingActions-module__0pg1ia__icon {
+  animation: 4s ease-in-out infinite FloatingActions-module__0pg1ia__idle;
+}
+
+.FloatingActions-module__0pg1ia__spin {
+  animation: 3.2s linear infinite FloatingActions-module__0pg1ia__spin;
+}
+
+@keyframes FloatingActions-module__0pg1ia__spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes FloatingActions-module__0pg1ia__idle {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.FloatingActions-module__0pg1ia__dot {
+  border: 2px solid var(--ivory);
+  background: #c0392b;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.FloatingActions-module__0pg1ia__whatsapp {
+  color: #fff;
+  background: #25d366;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .FloatingActions-module__0pg1ia__music .FloatingActions-module__0pg1ia__icon, .FloatingActions-module__0pg1ia__spin {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .FloatingActions-module__0pg1ia__wrap {
+    gap: 10px;
+    bottom: 16px;
+    left: 14px;
+  }
+
+  .FloatingActions-module__0pg1ia__fab {
+    width: 46px;
+    height: 46px;
+  }
+
+  .FloatingActions-module__0pg1ia__icon {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/*# sourceMappingURL=components_FloatingActions_module_css_1igg3k2._.single.css.map*/

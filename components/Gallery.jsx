@@ -20,7 +20,7 @@ function GalleryTile({ photo, index }) {
   const [missing, setMissing] = useState(false);
 
   return (
-    <Reveal delay={(index % 3) * 90} className={styles.tile}>
+    <Reveal delay={(index % 3) * 90} className={styles.tile} variant="zoom">
       {missing ? (
         <div className={styles.placeholder}>
           <span className={styles.placeholderMark}>&#10022;</span>

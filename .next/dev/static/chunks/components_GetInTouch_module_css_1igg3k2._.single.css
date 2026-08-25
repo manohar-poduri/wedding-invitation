@@ -1,0 +1,147 @@
+/* [project]/components/GetInTouch.module.css [app-client] (css) */
+.GetInTouch-module__H9u7Cq__section {
+  background: var(--ivory);
+}
+
+.GetInTouch-module__H9u7Cq__title {
+  margin-bottom: 4px;
+}
+
+.GetInTouch-module__H9u7Cq__divider {
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin: 18px auto 16px;
+  display: flex;
+}
+
+.GetInTouch-module__H9u7Cq__dividerLine {
+  background: var(--gold-line);
+  width: 64px;
+  height: 1px;
+}
+
+.GetInTouch-module__H9u7Cq__dividerMark {
+  color: var(--gold);
+  font-size: .9rem;
+}
+
+.GetInTouch-module__H9u7Cq__subtitle {
+  color: var(--ink);
+  opacity: .85;
+  margin: 0 0 48px;
+  font-size: 1rem;
+}
+
+.GetInTouch-module__H9u7Cq__grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.GetInTouch-module__H9u7Cq__card {
+  border: 1px solid var(--gold-line);
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 16px 36px #0a1f3d14;
+}
+
+.GetInTouch-module__H9u7Cq__name {
+  font-family: var(--font-display), serif;
+  color: var(--royal);
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.GetInTouch-module__H9u7Cq__role {
+  font-family: var(--font-label), serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 22px;
+  font-size: .74rem;
+}
+
+.GetInTouch-module__H9u7Cq__actions {
+  justify-content: center;
+  gap: 14px;
+  display: flex;
+}
+
+.GetInTouch-module__H9u7Cq__action {
+  font-family: var(--font-label), serif;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 6px;
+  font-size: .68rem;
+  text-decoration: none;
+  display: flex;
+}
+
+.GetInTouch-module__H9u7Cq__icon {
+  width: 22px;
+  height: 22px;
+}
+
+.GetInTouch-module__H9u7Cq__action span {
+  opacity: .85;
+}
+
+.GetInTouch-module__H9u7Cq__action:before {
+  content: "";
+  display: flex;
+}
+
+.GetInTouch-module__H9u7Cq__call svg, .GetInTouch-module__H9u7Cq__whatsapp svg, .GetInTouch-module__H9u7Cq__email svg {
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  padding: 13px;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.GetInTouch-module__H9u7Cq__call svg {
+  background: linear-gradient(155deg, var(--gold-bright), var(--gold) 60%, #a9822f);
+  color: #163a70;
+}
+
+.GetInTouch-module__H9u7Cq__whatsapp svg {
+  color: #fff;
+  background: #25d366;
+}
+
+.GetInTouch-module__H9u7Cq__email svg {
+  background: var(--royal);
+  color: #fff;
+}
+
+.GetInTouch-module__H9u7Cq__action:hover svg {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px #0a1f3d38;
+}
+
+@media (max-width: 480px) {
+  .GetInTouch-module__H9u7Cq__card {
+    padding: 22px 16px;
+  }
+
+  .GetInTouch-module__H9u7Cq__actions {
+    gap: 8px;
+  }
+
+  .GetInTouch-module__H9u7Cq__action {
+    font-size: .62rem;
+  }
+}
+
+/*# sourceMappingURL=components_GetInTouch_module_css_1igg3k2._.single.css.map*/

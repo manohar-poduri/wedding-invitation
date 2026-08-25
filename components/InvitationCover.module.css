@@ -49,7 +49,7 @@
   z-index: 2;
   width: 100%;
   height: 100%;
-  padding: 96px 24px 300px;
+  padding: 96px 24px 380px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,7 +165,7 @@
 
 .gopuram {
   position: absolute;
-  bottom: 0px;
+  bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   width: min(900px, 130vw);
@@ -176,12 +176,12 @@
 
 @media (max-width: 640px), (max-height: 700px) {
   .content {
-    padding: 80px 20px 230px;
+    padding: 80px 20px 280px;
     gap: 7vh;
   }
 
   .gopuram {
-    bottom: -70px;
+    bottom: -110px;
   }
 }
 
@@ -189,4 +189,14 @@
   .cover, .cover.closing, .sealRing {
     animation: none;
   }
+}
+
+.logo {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  border: 1px solid rgba(236, 208, 138, 0.6);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  margin-bottom: -80px;
+  animation: coverIn 1.4s ease both;
 }

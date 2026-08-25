@@ -7,7 +7,7 @@ export default function HashtagBanner() {
     <footer className={styles.footer} id="hashtag">
       <Gopuram className={styles.gopuram} />
       <div className={`wrap center ${styles.content}`}>
-        <Reveal>
+        <Reveal variant="fade">
           <p className="eyebrow" style={{ color: "var(--gold)" }}>
             Share the celebration
           </p>
@@ -16,7 +16,7 @@ export default function HashtagBanner() {
           <p className={styles.signOff}>
             With love,
             <br />
-            the families of Sai Swetha &amp; Sai Santhosh
+            the families of Sai Swetha &amp; Rama Prabha Sai Santhosh
           </p>
         </Reveal>
       </div>
