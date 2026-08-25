@@ -2118,7 +2118,6 @@ __turbopack_context__.v({
   "divider": "InvitationCover-module__91TFZq__divider",
   "eyebrow": "InvitationCover-module__91TFZq__eyebrow",
   "gopuram": "InvitationCover-module__91TFZq__gopuram",
-  "logo": "InvitationCover-module__91TFZq__logo",
   "names": "InvitationCover-module__91TFZq__names",
   "pulse": "InvitationCover-module__91TFZq__pulse",
   "seal": "InvitationCover-module__91TFZq__seal",
