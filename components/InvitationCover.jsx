@@ -28,7 +28,7 @@ export default function InvitationCover({ onOpen, closing }) {
           <p className={`eyebrow ${styles.eyebrow}`}>You are invited to the wedding of</p>
 
           <p className={styles.names}>
-            Sai Swetha <span className={styles.amp}>&amp;</span>Rama Prabha Sai Santhosh
+           Rama Prabha Sai Santhosh <span className={styles.amp}>&amp;</span> Sai Swetha
           </p>
 
           <div className={styles.divider} />

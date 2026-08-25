@@ -16,7 +16,7 @@ export default function HashtagBanner() {
           <p className={styles.signOff}>
             With love,
             <br />
-            the families of Sai Swetha &amp; Rama Prabha Sai Santhosh
+            the families of Sai Santhosh &amp; Sai Swetha
           </p>
         </Reveal>
       </div>

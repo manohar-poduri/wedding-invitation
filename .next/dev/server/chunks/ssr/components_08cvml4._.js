@@ -609,7 +609,7 @@ function Couple() {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Couple$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].grid,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Portrait, {
-                            person: BRIDE,
+                            person: GROOM,
                             delay: 0,
                             side: "left"
                         }, void 0, false, {
@@ -626,7 +626,7 @@ function Couple() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Portrait, {
-                            person: GROOM,
+                            person: BRIDE,
                             delay: 120,
                             side: "right"
                         }, void 0, false, {
@@ -1874,16 +1874,16 @@ function InvitationCover({ onOpen, closing }) {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].names,
                                 children: [
-                                    "Sai Swetha ",
+                                    "Rama Prabha Sai Santhosh ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$InvitationCover$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].amp,
                                         children: "&"
                                     }, void 0, false, {
                                         fileName: "[project]/components/InvitationCover.jsx",
                                         lineNumber: 31,
-                                        columnNumber: 24
+                                        columnNumber: 37
                                     }, this),
-                                    "Rama Prabha Sai Santhosh"
+                                    " Sai Swetha"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/InvitationCover.jsx",

@@ -74,9 +74,9 @@ export default function Couple() {
         </Reveal>
 
         <div className={styles.grid}>
-          <Portrait person={BRIDE} delay={0} side="left" />
+          <Portrait person={GROOM} delay={0} side="left" />
           <span className={styles.amp}>&amp;</span>
-          <Portrait person={GROOM} delay={120} side="right" />
+          <Portrait person={BRIDE} delay={120} side="right" />
         </div>
       </div>
     </section>

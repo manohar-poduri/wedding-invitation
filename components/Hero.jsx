@@ -36,13 +36,13 @@ export default function Hero() {
             className={`${styles.names} ${styles.heroItem}`}
             style={{ animationDelay: "0.75s" }}
           >
-            <span className={styles.scriptName}>Sai Swetha</span>
+            <span className={styles.scriptName}>Rama Prabha Sai Santhosh</span>
             <span className={styles.weds}>
               <span className={styles.wedsLine} />
               <span>&</span>
               <span className={styles.wedsLine} />
             </span>
-            <span className={styles.scriptName}>Rama Prabha Sai Santhosh</span>
+            <span className={styles.scriptName}>Sai Swetha</span>
           </div>
 
           <p
@@ -70,7 +70,7 @@ export default function Hero() {
             className={`${styles.hashtagPill} ${styles.heroItem}`}
             style={{ animationDelay: "1.22s" }}
           >
-            #SaiSwethaWedsSaiSanthosh
+            #SaiSanthoshaWedsSaiSwetha
           </a>
 
           <VineBorder
