@@ -8,12 +8,12 @@ import styles from "./Gallery.module.css";
 // (any common format works — jpg, jpeg, png, webp — just update the
 // extension below to match what you add).
 const PHOTOS = [
-  { file: "/gallery/photo-1.jpg", caption: "Sai Swetha & Sai Santhosh" },
-  { file: "/gallery/photo-2.jpg", caption: "" },
-  { file: "/gallery/photo-3.jpg", caption: "" },
-  { file: "/gallery/photo-4.jpg", caption: "" },
-  { file: "/gallery/photo-5.jpg", caption: "" },
-  { file: "/gallery/photo-6.jpg", caption: "" },
+  { file: "/gallery/groom.jpg", caption: "Sai Swetha & Sai Santhosh" },
+  { file: "/gallery/wedding.png", caption: "WeddingCard" },
+  { file: "/gallery/bride.jpg", caption: "Engagement1" },
+  { file: "/gallery/engagement.jpg", caption: "Engagement" },
+  { file: "/gallery/couple1.jpg", caption: "Couple" },
+  // { file: "/gallery/.jpg", caption: "Bride" },
 ];
 
 function GalleryTile({ photo, index }) {
@@ -47,10 +47,10 @@ export default function Gallery() {
             A few moments
           </p>
           <h2 className="section-title">Photo Gallery</h2>
-          <p className="section-sub" style={{ margin: "0 auto 48px" }}>
+          {/* <p className="section-sub" style={{ margin: "0 auto 48px" }}>
             Add your favourite pictures to <code>/public/gallery</code> and
             they&rsquo;ll appear here automatically.
-          </p>
+          </p> */}
         </Reveal>
 
         <div className={styles.grid}>

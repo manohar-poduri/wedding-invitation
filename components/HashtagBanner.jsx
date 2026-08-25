@@ -11,7 +11,7 @@ export default function HashtagBanner() {
           <p className="eyebrow" style={{ color: "var(--gold)" }}>
             Share the celebration
           </p>
-          <p className={styles.hashtag}>#SaiSwethaWedsSaiSanthosh</p>
+          <p className={styles.hashtag}>#SwethaSanthoshKalyanam</p>
           <div className="divider-line" />
           <p className={styles.signOff}>
             With love,

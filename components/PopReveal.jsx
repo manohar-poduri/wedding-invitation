@@ -7,6 +7,7 @@ import styles from "./PopReveal.module.css";
 // Edit these two lines to change what's revealed underneath the decor
 const WEDDING_DATE = "4th September 2026";
 const MUHURTHAM = "3:50 AM Muhurtham";
+const HASHTAG = "#SwethaSanthoshKalyanam";
 
 const ROWS = 3;
 const COLS = 4;
@@ -96,6 +97,7 @@ export default function PopReveal() {
               <p className={styles.revealMark}>&#10022;</p>
               <p className={styles.revealDate}>{WEDDING_DATE}</p>
               <p className={styles.revealTime}>{MUHURTHAM}</p>
+              <p className={styles.revealHashtag}>{HASHTAG}</p>
             </div>
 
             <div className={styles.grid}>

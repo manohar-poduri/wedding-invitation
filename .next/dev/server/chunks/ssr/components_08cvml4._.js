@@ -1189,28 +1189,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Gallery$2e$mod
 // extension below to match what you add).
 const PHOTOS = [
     {
-        file: "/gallery/photo-1.jpg",
+        file: "/gallery/groom.jpg",
         caption: "Sai Swetha & Sai Santhosh"
     },
     {
-        file: "/gallery/photo-2.jpg",
-        caption: ""
+        file: "/gallery/wedding.png",
+        caption: "WeddingCard"
     },
     {
-        file: "/gallery/photo-3.jpg",
-        caption: ""
+        file: "/gallery/bride.jpg",
+        caption: "Engagement1"
     },
     {
-        file: "/gallery/photo-4.jpg",
-        caption: ""
+        file: "/gallery/engagement.jpg",
+        caption: "Engagement"
     },
     {
-        file: "/gallery/photo-5.jpg",
-        caption: ""
-    },
-    {
-        file: "/gallery/photo-6.jpg",
-        caption: ""
+        file: "/gallery/couple1.jpg",
+        caption: "Couple"
     }
 ];
 function GalleryTile({ photo, index }) {
@@ -1285,27 +1281,6 @@ function Gallery() {
                         }, void 0, false, {
                             fileName: "[project]/components/Gallery.jsx",
                             lineNumber: 49,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "section-sub",
-                            style: {
-                                margin: "0 auto 48px"
-                            },
-                            children: [
-                                "Add your favourite pictures to ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("code", {
-                                    children: "/public/gallery"
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Gallery.jsx",
-                                    lineNumber: 51,
-                                    columnNumber: 44
-                                }, this),
-                                " and they’ll appear here automatically."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/components/Gallery.jsx",
-                            lineNumber: 50,
                             columnNumber: 11
                         }, this)
                     ]
@@ -2115,6 +2090,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PopReveal$2e$m
 // Edit these two lines to change what's revealed underneath the decor
 const WEDDING_DATE = "4th September 2026";
 const MUHURTHAM = "3:50 AM Muhurtham";
+const HASHTAG = "#SwethaSanthoshKalyanam";
 const ROWS = 3;
 const COLS = 4;
 const TILE_COUNT = ROWS * COLS;
@@ -2142,20 +2118,20 @@ const ICONS = {
                 r: "2.4"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 3.5c1.8 0 3 1.6 2.2 3.6C13.4 8.9 12 10 12 10s-1.4-1.1-2.2-2.9C9 5.1 10.2 3.5 12 3.5ZM12 20.5c-1.8 0-3-1.6-2.2-3.6.8-1.8 2.2-2.9 2.2-2.9s1.4 1.1 2.2 2.9c.8 2-.4 3.6-2.2 3.6ZM4.5 8.5c.9-1.6 2.9-2 4.3-.5 1.3 1.3 1.4 3 1.4 3s-1.7.1-3-.6C5.7 9.6 4.5 8.5 4.5 8.5ZM19.5 15.5c-.9 1.6-2.9 2-4.3.5-1.3-1.3-1.4-3-1.4-3s1.7-.1 3 .6c1.5.8 2.7 1.9 2.7 1.9ZM4.5 15.5s1.2-1.1 2.7-1.9c1.3-.7 3-.6 3-.6s-.1 1.7-1.4 3c-1.4 1.5-3.4 1.1-4.3-.5ZM19.5 8.5s-1.2 1.1-2.7 1.9c-1.3.7-3 .6-3 .6s.1-1.7 1.4-3c1.4-1.5 3.4-1.1 4.3.5Z"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/PopReveal.jsx",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
     bell: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2164,14 +2140,14 @@ const ICONS = {
                 d: "M6 16c0-3.5.5-7.5 6-7.5s6 4 6 7.5H6Z"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 27,
+                lineNumber: 28,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M4.5 16h15M10.5 19h3M12 8.5V6"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -2180,13 +2156,13 @@ const ICONS = {
                 r: "1.1"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/PopReveal.jsx",
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
     diya: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2195,20 +2171,20 @@ const ICONS = {
                 d: "M3.5 14.5C3.5 17 7.3 19 12 19s8.5-2 8.5-4.5c0-1.4-2-2.5-4.3-2.9M3.5 14.5c0-1.4 2-2.5 4.3-2.9M8 11.6c1.2-.3 2.6-.5 4-.5s2.8.2 4 .5"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M12 9.5c-1.1-1.4-1-3 0-4.5 1 1.5 1.1 3.1 0 4.5Z"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/PopReveal.jsx",
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0)),
     gem: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2217,20 +2193,20 @@ const ICONS = {
                 d: "M6 9 12 3l6 6-6 12z"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                 d: "M6 9h12M9.5 9 12 3l2.5 6"
             }, void 0, false, {
                 fileName: "[project]/components/PopReveal.jsx",
-                lineNumber: 41,
+                lineNumber: 42,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/components/PopReveal.jsx",
-        lineNumber: 39,
+        lineNumber: 40,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0))
 };
@@ -2274,7 +2250,7 @@ function PopReveal() {
                             children: "A Little Surprise"
                         }, void 0, false, {
                             fileName: "[project]/components/PopReveal.jsx",
-                            lineNumber: 76,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2282,7 +2258,7 @@ function PopReveal() {
                             children: "Pop the Decor to Reveal Our Wedding Date"
                         }, void 0, false, {
                             fileName: "[project]/components/PopReveal.jsx",
-                            lineNumber: 79,
+                            lineNumber: 80,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2292,7 +2268,7 @@ function PopReveal() {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PopReveal$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dividerLine
                                 }, void 0, false, {
                                     fileName: "[project]/components/PopReveal.jsx",
-                                    lineNumber: 83,
+                                    lineNumber: 84,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2300,26 +2276,26 @@ function PopReveal() {
                                     children: "✦"
                                 }, void 0, false, {
                                     fileName: "[project]/components/PopReveal.jsx",
-                                    lineNumber: 84,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PopReveal$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].dividerLine
                                 }, void 0, false, {
                                     fileName: "[project]/components/PopReveal.jsx",
-                                    lineNumber: 85,
+                                    lineNumber: 86,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/PopReveal.jsx",
-                            lineNumber: 82,
+                            lineNumber: 83,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/PopReveal.jsx",
-                    lineNumber: 75,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -2337,7 +2313,7 @@ function PopReveal() {
                                         children: "✦"
                                     }, void 0, false, {
                                         fileName: "[project]/components/PopReveal.jsx",
-                                        lineNumber: 96,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2345,7 +2321,7 @@ function PopReveal() {
                                         children: WEDDING_DATE
                                     }, void 0, false, {
                                         fileName: "[project]/components/PopReveal.jsx",
-                                        lineNumber: 97,
+                                        lineNumber: 98,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2353,13 +2329,21 @@ function PopReveal() {
                                         children: MUHURTHAM
                                     }, void 0, false, {
                                         fileName: "[project]/components/PopReveal.jsx",
-                                        lineNumber: 98,
+                                        lineNumber: 99,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PopReveal$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].revealHashtag,
+                                        children: HASHTAG
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/PopReveal.jsx",
+                                        lineNumber: 100,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/PopReveal.jsx",
-                                lineNumber: 91,
+                                lineNumber: 92,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2380,7 +2364,7 @@ function PopReveal() {
                                                 className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PopReveal$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].tileBurst
                                             }, void 0, false, {
                                                 fileName: "[project]/components/PopReveal.jsx",
-                                                lineNumber: 116,
+                                                lineNumber: 118,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -2394,19 +2378,19 @@ function PopReveal() {
                                                 children: ICONS[tile.icon]
                                             }, void 0, false, {
                                                 fileName: "[project]/components/PopReveal.jsx",
-                                                lineNumber: 117,
+                                                lineNumber: 119,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, tile.id, true, {
                                         fileName: "[project]/components/PopReveal.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 107,
                                         columnNumber: 19
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/components/PopReveal.jsx",
-                                lineNumber: 101,
+                                lineNumber: 103,
                                 columnNumber: 13
                             }, this),
                             allPopped && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2418,23 +2402,23 @@ function PopReveal() {
                                         }
                                     }, i, false, {
                                         fileName: "[project]/components/PopReveal.jsx",
-                                        lineNumber: 136,
+                                        lineNumber: 138,
                                         columnNumber: 19
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/PopReveal.jsx",
-                                lineNumber: 134,
+                                lineNumber: 136,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/PopReveal.jsx",
-                        lineNumber: 90,
+                        lineNumber: 91,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/PopReveal.jsx",
-                    lineNumber: 89,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2442,18 +2426,18 @@ function PopReveal() {
                     children: allPopped ? "You found it \u2728" : "Tap each ornament to pop it"
                 }, void 0, false, {
                     fileName: "[project]/components/PopReveal.jsx",
-                    lineNumber: 147,
+                    lineNumber: 149,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/PopReveal.jsx",
-            lineNumber: 74,
+            lineNumber: 75,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/PopReveal.jsx",
-        lineNumber: 73,
+        lineNumber: 74,
         columnNumber: 5
     }, this);
 }
