@@ -9,7 +9,7 @@ const EVENTS = [
   {
     icon: "dinner",
     title: "Dinner",
-    when: "4rd September 2026 · 7:00 PM",
+    when: "4th September 2026 · 7:00 PM",
     venue: "Lee Paradise Convention, Vizianagaram",
     description:
       "An evening of dinner and celebration with family and friends ahead of the wedding muhurtham.",

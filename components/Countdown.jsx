@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
 import styles from "./Countdown.module.css";
 
-// Muhurtham: 4th September 2026, 3:50 AM IST
-const TARGET = new Date("2026-09-04T03:50:00+05:30").getTime();
+// Countdown target: 5th September 2026, 3:50 AM IST
+const TARGET = new Date("2026-09-05T03:50:00+05:30").getTime();
 
 function getTimeLeft() {
   const diff = Math.max(TARGET - Date.now(), 0);
+
   return {
     days: Math.floor(diff / (1000 * 60 * 60 * 24)),
     hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
@@ -22,7 +23,11 @@ export default function Countdown() {
 
   useEffect(() => {
     setTime(getTimeLeft());
-    const id = setInterval(() => setTime(getTimeLeft()), 1000);
+
+    const id = setInterval(() => {
+      setTime(getTimeLeft());
+    }, 1000);
+
     return () => clearInterval(id);
   }, []);
 
@@ -40,9 +45,13 @@ export default function Countdown() {
           <p className="eyebrow" style={{ color: "var(--gold)" }}>
             Counting down to
           </p>
-          <h2 className="section-title">The Auspicious Muhurtham</h2>
+
+          <h2 className="section-title">
+            The Auspicious Muhurtham
+          </h2>
+
           <p className="section-sub" style={{ margin: "0 auto 48px" }}>
-            Saturday, 4th September 2026 &middot; 3:50 AM &middot; (Early Hours of Saturday) Lee Paradise
+            Friday, 4th September 2026 &middot; 3:50 AM &middot; (Early Hours of Saturday) Lee Paradise
             Convention, Vizianagaram
           </p>
         </Reveal>
@@ -54,7 +63,10 @@ export default function Countdown() {
                 <span className={styles.value}>
                   {time ? String(u.value).padStart(2, "0") : "--"}
                 </span>
-                <span className={`${styles.label}`}>{u.label}</span>
+
+                <span className={styles.label}>
+                  {u.label}
+                </span>
               </div>
             </Reveal>
           ))}

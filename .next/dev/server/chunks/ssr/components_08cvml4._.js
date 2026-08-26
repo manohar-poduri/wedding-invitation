@@ -277,8 +277,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Countdown$2e$m
 ;
 ;
 ;
-// Muhurtham: 4th September 2026, 3:50 AM IST
-const TARGET = new Date("2026-09-04T03:50:00+05:30").getTime();
+// Countdown target: 5th September 2026, 3:50 AM IST
+const TARGET = new Date("2026-09-05T03:50:00+05:30").getTime();
 function getTimeLeft() {
     const diff = Math.max(TARGET - Date.now(), 0);
     return {
@@ -292,7 +292,9 @@ function Countdown() {
     const [time, setTime] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         setTime(getTimeLeft());
-        const id = setInterval(()=>setTime(getTimeLeft()), 1000);
+        const id = setInterval(()=>{
+            setTime(getTimeLeft());
+        }, 1000);
         return ()=>clearInterval(id);
     }, []);
     const units = [
@@ -329,7 +331,7 @@ function Countdown() {
                             children: "Counting down to"
                         }, void 0, false, {
                             fileName: "[project]/components/Countdown.jsx",
-                            lineNumber: 40,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -337,7 +339,7 @@ function Countdown() {
                             children: "The Auspicious Muhurtham"
                         }, void 0, false, {
                             fileName: "[project]/components/Countdown.jsx",
-                            lineNumber: 43,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -345,16 +347,16 @@ function Countdown() {
                             style: {
                                 margin: "0 auto 48px"
                             },
-                            children: "Saturday, 4th September 2026 · 3:50 AM · (Early Hours of Saturday) Lee Paradise Convention, Vizianagaram"
+                            children: "Friday, 4th September 2026 · 3:50 AM · (Early Hours of Saturday) Lee Paradise Convention, Vizianagaram"
                         }, void 0, false, {
                             fileName: "[project]/components/Countdown.jsx",
-                            lineNumber: 44,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/Countdown.jsx",
-                    lineNumber: 39,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -370,42 +372,42 @@ function Countdown() {
                                         children: time ? String(u.value).padStart(2, "0") : "--"
                                     }, void 0, false, {
                                         fileName: "[project]/components/Countdown.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: `${__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Countdown$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label}`,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Countdown$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].label,
                                         children: u.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Countdown.jsx",
-                                        lineNumber: 57,
+                                        lineNumber: 67,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/Countdown.jsx",
-                                lineNumber: 53,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, this)
                         }, u.label, false, {
                             fileName: "[project]/components/Countdown.jsx",
-                            lineNumber: 52,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/Countdown.jsx",
-                    lineNumber: 50,
+                    lineNumber: 59,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/Countdown.jsx",
-            lineNumber: 38,
+            lineNumber: 43,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/Countdown.jsx",
-        lineNumber: 37,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }
@@ -693,7 +695,7 @@ const EVENTS = [
     {
         icon: "dinner",
         title: "Dinner",
-        when: "4rd September 2026 · 7:00 PM",
+        when: "4th September 2026 · 7:00 PM",
         venue: "Lee Paradise Convention, Vizianagaram",
         description: "An evening of dinner and celebration with family and friends ahead of the wedding muhurtham."
     },
