@@ -49,7 +49,7 @@ export default function Hero() {
             className={`${styles.dateLine} ${styles.heroItem}`}
             style={{ animationDelay: "0.9s" }}
           >
-            Saturday, 4th September 2026
+            Friday, 4th September 2026
           </p>
 
           <p
